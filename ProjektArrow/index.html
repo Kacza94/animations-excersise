@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Document</title>
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+  crossorigin="anonymous">
+
+ <style>
+    button {
+        position: absolute;
+        bottom: 10px;
+        left: calc(50% - 50px);
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+        border-style: none;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    button i {
+        position: absolute;
+        font-size: 50px;
+        color: white;
+        text-shadow: white 0px 20px, white 0px -20px;
+        animation: arrows 1s infinite linear;
+        transform: translate(-50%, -200%);
+    }
+
+    button:hover {
+        box-shadow: lightblue 0 0 15px 0;
+    }
+
+    button:hover i {
+        animation-duration: 1.2s;
+    }
+
+    @keyframes arrows {        
+        100% {
+            transform: translate(-50%, 200%);
+        }
+    }
+ </style>
+</head>
+
+<body>
+
+ <button class="arrow">
+    <i class="fas fa-angle-down"></i>
+ </button>
+</body>
+
+</html>
